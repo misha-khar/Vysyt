@@ -3,5 +3,5 @@ The main repo for Vysyt, an urban vacation planning tool developed for Universit
 ## Group Members
 - Michael (Misha) Kharkovski
 - Zane Zeppuhar
-- []
+- John Pepling
 - []
