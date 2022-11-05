@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Vysyt';
+
+  placeInput = '';
+  minPrice = null;
+  maxPrice = null;
+
+
+
+
 }

@@ -16,6 +16,7 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "strictPropertyInitialization": false, // added this to allow vars to be initialized w/o values
     "target": "es2020",
     "module": "es2020",
     "lib": [

@@ -4,25 +4,35 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PlaceInputComponent } from './place-input/place-input.component';
-import { SubmitButtonComponent } from './submit-button/submit-button.component';
-import { PriceSliderComponent } from './price-slider/price-slider.component';
 import { RefreshResultsButtonComponent } from './refresh-results-button/refresh-results-button.component';
 import { HeaderComponent } from './header/header.component';
-import { TestOutputComponent } from './test-output/test-output.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatInputModule } from '@angular/material/input';
+import { UserInputComponent } from './user-input/user-input.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     PlaceInputComponent,
-    SubmitButtonComponent,
-    PriceSliderComponent,
     RefreshResultsButtonComponent,
-    TestOutputComponent
+    UserInputComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatButtonModule,
+    MatIconModule,
+    MatMenuModule,
+    MatSidenavModule,
+    MatSlideToggleModule,
+    MatToolbarModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
