@@ -1,8 +1,8 @@
 class request {
     private _priceLevel: number;
     private _placeType: string;
-    private _city: city;
-    private _country: country;
+    private _city: City;
+    private _country: Country;
 
     get priceLevel() {
         return this._priceLevel;
@@ -20,7 +20,7 @@ class request {
         return this._country;
     }
 
-    constructor(priceLevel?: number, placeType?: string, city?: city, country?: country) {
+    constructor(priceLevel?: number, placeType?: string, city?: City, country?: Country) {
         if(priceLevel) {this._priceLevel = priceLevel;}
         if(placeType) {this._placeType = placeType;}
         if(city) {this._city = city;}
