@@ -14,6 +14,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
 import { UserInputComponent } from './user-input/user-input.component';
+import { RequestParserComponent } from './request-parser/request-parser.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { UserInputComponent } from './user-input/user-input.component';
     PlaceInputComponent,
     RefreshResultsButtonComponent,
     UserInputComponent,
+    RequestParserComponent,
   ],
   imports: [
     BrowserModule,
