@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./request-parser.component.css']
 })
 export class RequestParserComponent implements OnInit {
+  private _placeArr: string[];
+  private _request: request;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  
 }
