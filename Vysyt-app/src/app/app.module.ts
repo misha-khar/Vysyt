@@ -13,8 +13,11 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
+import { NgxSliderModule } from '@angular-slider/ngx-slider';
+import { FormsModule } from '@angular/forms';
 import { UserInputComponent } from './user-input/user-input.component';
 import { RequestParserComponent } from './request-parser/request-parser.component';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +37,9 @@ import { RequestParserComponent } from './request-parser/request-parser.componen
     MatSidenavModule,
     MatSlideToggleModule,
     MatToolbarModule,
-    MatInputModule
+    MatInputModule,
+    NgxSliderModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,9 +1,6 @@
 <p>user-input works!</p>
 <div class="wrapper">
   <div class="container">
-    <div class="slider-track">
-      <input type="range" min="0" max="5" value="2" id="price-slider-1">
-      <input type="range" min="0" max="5" value="3" id="price-slider-2">
-    </div>
+    <ngx-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ngx-slider>
   </div>
 </div>

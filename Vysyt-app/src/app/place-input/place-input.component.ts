@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-place-input',
@@ -7,16 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 
-export class PlaceInputComponent implements OnInit {
-  value = 'Clear me';
-
-  rawUserPlaceInput = '';
-  placeInput = '';
-  constructor() { }
-
-  ngOnInit(): void {
-    const placeInput = this.rawUserPlaceInput;
-    console.log("user inputted:" + placeInput);
-  }
+export class PlaceInputComponent{
+  placeInput = document.getElementById
 
 }
