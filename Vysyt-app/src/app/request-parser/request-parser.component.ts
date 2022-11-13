@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RequestParserComponent implements OnInit {
   private _placeArr: string[];
-  private _request: request;
+  private _request: Request;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  
+
 }
