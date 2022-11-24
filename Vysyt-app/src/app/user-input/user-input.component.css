@@ -1,8 +1,18 @@
-.wrapper{
+.container-fluid {
   position: relative;
   width: 95vmin;
-
+  outline: 5px blue;
+  outline-style: solid;
 }
-.container{
+
+.city-container {
+  position: relative;
+}
+
+.country-container {
+  position: relative;
+}
+
+.slider-container {
   position: relative;
 }

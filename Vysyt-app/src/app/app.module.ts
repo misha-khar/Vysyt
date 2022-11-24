@@ -17,6 +17,7 @@ import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { FormsModule } from '@angular/forms';
 import { UserInputComponent } from './user-input/user-input.component';
 import { RequestParserComponent } from './request-parser/request-parser.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { RequestParserComponent } from './request-parser/request-parser.componen
     MatToolbarModule,
     MatInputModule,
     NgxSliderModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

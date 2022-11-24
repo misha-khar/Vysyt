@@ -1,6 +1,28 @@
-<p>user-input works!</p>
-<div class="wrapper">
-  <div class="container">
-    <ngx-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ngx-slider>
+<div class="container-fluid">
+  <h2>User Input Form</h2>
+  <!-- <form [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)"> -->
+  <div class="form-group">
+    <div class="radio">
+      <label>
+        <input type="radio" name="placeType" formControlName="placeType" value=city checked>City
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="placeType" formControlName="placeType" value=country>Country
+      </label>
+    </div>
+    <label>Place Name </label>
+    <input formControlName="place" id="city-input" type="text" class="form-control" placeholder="Enter city here">
   </div>
+  <div>
+    <ngx-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ngx-slider>
+    Minval: {{minValue}}
+    Maxval: {{maxValue}}
+  </div>
+  <!-- <button (click)="onSubmit()">Submit</button> -->
+  <input type="submit" class="forsubmit" value="Submit">
+  <!-- </form> -->
+  <!-- {{inputForm.value | json}} Minval: {{minValue}} Maxval: {{maxValue}} -->
+
 </div>

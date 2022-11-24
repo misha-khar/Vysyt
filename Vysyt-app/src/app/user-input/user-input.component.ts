@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Options, LabelType } from "@angular-slider/ngx-slider";
+import { FormControl, FormGroup } from '@angular/forms';
+import { userInputs } from '../models/userInputs';
 
 @Component({
   selector: 'app-user-input',
@@ -8,6 +10,8 @@ import { Options, LabelType } from "@angular-slider/ngx-slider";
 })
 export class UserInputComponent {
 
+  // place;
+  // placeType;
   minValue: number = 1;
   maxValue: number = 4;
   options: Options = {
@@ -23,5 +27,20 @@ export class UserInputComponent {
           return "$" + value;
       }
     }
-  };
+  }
+//   ngOnInit() {
+//     formdata = new FormGroup({ // this instantiates an input form
+//       placeType: new FormControl('city'),
+//       place: new FormControl('New York'), // default input for city
+//     });
+//  }
+//   onClickSubmit(data) {
+//     this.place = data.place;
+//     this.placeType = data.placeType;
+//   }
+  // onSubmit() {
+  //   alert("submitted!")
+  //   newRequest: userInputs = new userInputs(this.inputForm.get('place'), this.minValue, this.maxValue, this.inputForm.get('placeType'));
+  // }
+
 }
