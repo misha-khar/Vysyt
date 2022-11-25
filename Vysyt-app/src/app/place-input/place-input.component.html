@@ -1,39 +1,10 @@
-<p>top of input test</p>
-
-<form #userInputForm="ngForm" (ngSubmit)="submit(userInputForm.value)">
-  <div class="radio">
-    <label>
-      <input type="radio" name="placeType" value=city checked ngModel>City
-    </label>
-  </div>
-  <div class="radio">
-    <label>
-      <input type="radio" name="placeType" value=country ngModel>Country
-    </label>
-  </div>
-
-  <br>
-
-  <div class="place-input">
-    <label>
-      Enter Place:
-      <input type="text" name="place" placeholder="Ex. Pittsburgh" ngModel>
-    </label>
-  </div>
-
-  <br>
-
-  <div>
-    <ngx-slider name="priceSlider" [(value)]="minValue" [(highValue)]="maxValue" [options]="options" ngModel></ngx-slider>
-  </div>
-
-  <br>
-
-  <div class="btn">
-    <button>Submit</button>
-  </div>
-</form>
-
-
-
-<p>bottom of input test</p>
+<div class="wrapper">
+  <form>
+    <div class="form-group">
+      <input ngModel name="placeType" #placeType="ngModel" (change)="log(placeType)" id="placeType" type="radio" value=city checked>City
+      <input ngModel name="placeType" #placeType="ngModel" (change)="log(placeType)"id="placeType"type="radio" value=country>Country
+      <input ngModel name="place" #place="ngModel" (change)="log(place)" id="place"type="text" placeholder="Ex. Pittsburgh">
+      <button class="button" type="submit">Submit</button>
+    </div>
+  </form>
+</div>

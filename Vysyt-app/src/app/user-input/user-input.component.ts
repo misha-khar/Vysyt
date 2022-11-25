@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Options, LabelType } from "@angular-slider/ngx-slider";
 import { FormControl, FormGroup } from '@angular/forms';
-import { userInputs } from '../models/userInputs';
+import { userInputs } from '../userInputs';
 
 @Component({
   selector: 'app-user-input',

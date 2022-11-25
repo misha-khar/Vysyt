@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { UserInputComponent } from './user-input/user-input.component';
 import { RequestParserComponent } from './request-parser/request-parser.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PriceSliderComponent } from './price-slider/price-slider.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     RefreshResultsButtonComponent,
     UserInputComponent,
     RequestParserComponent,
+    PriceSliderComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatInputModule,
     NgxSliderModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
