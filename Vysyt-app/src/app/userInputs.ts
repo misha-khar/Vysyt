@@ -1,15 +1,15 @@
 export class userInputs {
   private _place: string;
-  private _minPrice: Int16Array;
-  private _maxPrice: Int16Array;
-  private _isCity: string;
+  private _minPrice: number;
+  private _maxPrice: number;
+  private _placeType: string;
 
   // Must have a name
-  constructor(place?: string, minPrice?: Int16Array, maxPrice?: Int16Array, isCity?: string) {
+  constructor(place?: string, minPrice?: number, maxPrice?: number, placeType?: string) {
     if (place) { this._place = place; }
     if (minPrice) { this._minPrice = minPrice; }
     if (maxPrice) { this._maxPrice = maxPrice; }
-    if (isCity) { this._isCity = isCity }
+    if (placeType) { this._placeType = placeType }
   }
 
 
@@ -17,6 +17,6 @@ export class userInputs {
   get place() { return this._place; }
   get minPrice() { return this._minPrice; }
   get maxPrice() { return this._maxPrice; }
-  get isCity() { return this._isCity }
+  get placeType() { return this._placeType }
 
 }

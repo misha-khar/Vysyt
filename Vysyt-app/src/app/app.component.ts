@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { GlobalVars } from './global-vars';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,10 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Vysyt';
-
-  placeInput = '';
-  minPrice = null;
-  maxPrice = null;
 
 
 

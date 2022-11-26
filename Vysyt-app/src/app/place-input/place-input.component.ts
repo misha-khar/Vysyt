@@ -12,6 +12,13 @@ import { userInputs } from '../userInputs';
 
 export class PlaceInputComponent {
 
+  input: userInputs;
+
   log(x) { console.log(x) }
+
+  saveData(){
+    alert("hello");
+  }
+
 
 }

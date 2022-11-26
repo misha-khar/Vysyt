@@ -1,10 +1,11 @@
 <div class="wrapper">
-  <form>
+  <form onsubmit="saveData()">
     <div class="form-group">
-      <input ngModel name="placeType" #placeType="ngModel" (change)="log(placeType)" id="placeType" type="radio" value=city checked>City
-      <input ngModel name="placeType" #placeType="ngModel" (change)="log(placeType)"id="placeType"type="radio" value=country>Country
-      <input ngModel name="place" #place="ngModel" (change)="log(place)" id="place"type="text" placeholder="Ex. Pittsburgh">
-      <button class="button" type="submit">Submit</button>
+      <input name="placeType" id="placeType" type="radio" value=city checked>City
+      <input name="placeType" id="placeType"type="radio" value=country>Country
+      <input name="place" id="place"type="text" placeholder="Ex. Pittsburgh">
+      <!-- <button class="button" type="submit">Submit</button> -->
+      <input type="submit" value="Submit">
     </div>
   </form>
 </div>
