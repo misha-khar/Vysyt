@@ -1,3 +1,6 @@
+import './city';
+import './country';
+
 class request {
     private _priceLevel: number;
     private _placeType: string;
