@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TestOutputComponent } from './test-output/test-output.component';
 import { RefreshResultsButtonComponent } from './refresh-results-button/refresh-results-button.component';
 import { HeaderComponent } from './header/header.component';
 import { MatButtonModule } from '@angular/material/button';
@@ -18,16 +17,17 @@ import { FormsModule } from '@angular/forms';
 import { UserInputComponent } from './user-input/user-input.component';
 import { RequestParserComponent } from './request-parser/request-parser.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { OutputTestComponent } from './output-test/output-test.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    TestOutputComponent,
     RefreshResultsButtonComponent,
     UserInputComponent,
     RequestParserComponent,
+    OutputTestComponent,
   ],
   imports: [
     BrowserModule,

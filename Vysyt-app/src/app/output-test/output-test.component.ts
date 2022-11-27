@@ -8,14 +8,14 @@ import { userInputs } from '../userInputs';
 import { GlobalVars } from '../global-vars';
 import { SharedService } from '../shared.service';
 import { Subscription } from 'rxjs';
+
 @Component({
-  selector: 'app-place-input',
-  templateUrl: './test-output.component.html',
-  styleUrls: ['./test-output.component.css']
+  selector: 'app-output-test',
+  templateUrl: './output-test.component.html',
+  styleUrls: ['./output-test.component.css']
 })
+export class OutputTestComponent implements OnInit {
 
-
-export class TestOutputComponent implements OnInit {
   clickEventsubscription: Subscription;
 
   constructor(private sharedService: SharedService) {
@@ -38,6 +38,5 @@ export class TestOutputComponent implements OnInit {
     this.minVal = GlobalVars.globalMinVal;
     this.maxVal = GlobalVars.globalMaxVal;
   }
-
 
 }

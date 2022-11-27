@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PlaceInputComponent } from './test-output.component';
+import { OutputTestComponent } from './output-test.component';
 
-describe('PlaceInputComponent', () => {
-  let component: PlaceInputComponent;
-  let fixture: ComponentFixture<PlaceInputComponent>;
+describe('OutputTestComponent', () => {
+  let component: OutputTestComponent;
+  let fixture: ComponentFixture<OutputTestComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PlaceInputComponent ]
+      declarations: [ OutputTestComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PlaceInputComponent);
+    fixture = TestBed.createComponent(OutputTestComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
