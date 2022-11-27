@@ -19,33 +19,37 @@ import { UserInputComponent } from './user-input/user-input.component';
 import { RequestParserComponent } from './request-parser/request-parser.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PriceSliderComponent } from './price-slider/price-slider.component';
+import { WeatherComponent } from "./weather/weather.component";
+import { HttpClientModule } from "@angular/common/http";
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    PlaceInputComponent,
-    RefreshResultsButtonComponent,
-    UserInputComponent,
-    RequestParserComponent,
-    PriceSliderComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    MatButtonModule,
-    MatIconModule,
-    MatMenuModule,
-    MatSidenavModule,
-    MatSlideToggleModule,
-    MatToolbarModule,
-    MatInputModule,
-    NgxSliderModule,
-    FormsModule,
-    ReactiveFormsModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        PlaceInputComponent,
+        RefreshResultsButtonComponent,
+        UserInputComponent,
+        RequestParserComponent,
+        PriceSliderComponent,
+        WeatherComponent,
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        MatButtonModule,
+        MatIconModule,
+        MatMenuModule,
+        MatSidenavModule,
+        MatSlideToggleModule,
+        MatToolbarModule,
+        MatInputModule,
+        NgxSliderModule,
+        FormsModule,
+        ReactiveFormsModule,
+        HttpClientModule,
+    ]
 })
 export class AppModule { }
