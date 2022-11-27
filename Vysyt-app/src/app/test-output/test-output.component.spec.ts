@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PriceSliderComponent } from './price-slider.component';
+import { PlaceInputComponent } from './test-output.component';
 
-describe('PriceSliderComponent', () => {
-  let component: PriceSliderComponent;
-  let fixture: ComponentFixture<PriceSliderComponent>;
+describe('PlaceInputComponent', () => {
+  let component: PlaceInputComponent;
+  let fixture: ComponentFixture<PlaceInputComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PriceSliderComponent ]
+      declarations: [ PlaceInputComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PriceSliderComponent);
+    fixture = TestBed.createComponent(PlaceInputComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

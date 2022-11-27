@@ -1,5 +1,10 @@
 import { userInputs } from "./userInputs";
 
 export class GlobalVars {
-  // data = new userInputs("new york", 0, 5, "city");
+  public static globalPlace: string;
+  public static globalPlaceType: string;
+  public static globalMinVal: number;
+  public static globalMaxVal: number;
+
+
 }
