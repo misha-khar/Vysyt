@@ -19,6 +19,7 @@ import { RequestParserComponent } from './request-parser/request-parser.componen
 import { ReactiveFormsModule } from '@angular/forms';
 import { OutputTestComponent } from './output-test/output-test.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     UserInputComponent,
     RequestParserComponent,
     OutputTestComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

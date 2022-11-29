@@ -7,11 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  dev1 = 'Misha Kharkovski';
-  dev2 = 'Zane Zeppuhar';
-  dev3 = 'John Pepling';
-  dev4 = 'Ibrahim Qutyan';
-
   constructor() { }
 
   ngOnInit(): void {

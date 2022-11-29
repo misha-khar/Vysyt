@@ -42,3 +42,12 @@ button:disabled {
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.wrapper{
+  align-items: center;
+  /* margin: auto; */
+  margin-right: 5%;
+  margin-left: 5%;
+  max-height: 90%;
+  margin-top: 5%;
+}

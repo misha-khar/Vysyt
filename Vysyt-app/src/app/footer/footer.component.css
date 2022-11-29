@@ -1,0 +1,16 @@
+.wrapper{
+  margin: auto;
+  text-align: center;
+  margin-top: 2%;
+}
+.text-div{
+  margin: auto;
+}
+.dev-label{
+  font-size:large;
+}
+a:link {
+  font-size: medium;
+  text-decoration: none;
+}
+
