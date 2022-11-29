@@ -18,6 +18,7 @@ import { UserInputComponent } from './user-input/user-input.component';
 import { RequestParserComponent } from './request-parser/request-parser.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { OutputTestComponent } from './output-test/output-test.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { OutputTestComponent } from './output-test/output-test.component';
     NgxSliderModule,
     FormsModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

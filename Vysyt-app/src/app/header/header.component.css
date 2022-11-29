@@ -1,7 +1,20 @@
-.wrapper{
-
-}
-img{
-  width: 20vw;
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
 }
 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.text_div{
+  text-align: center;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+}

@@ -1,12 +1,24 @@
 <div class="wrapper">
-  <label>USER INPUT</label>
+  <!-- <label>USER INPUT</label> -->
   <form #inputForm="ngForm" (ngSubmit)="onClickSubmit(inputForm.value)">
-    <div class="form-group">
-      <input ngModel name="placeType" id="placeType" type="radio" value=city checked>City
-      <input ngModel name="placeType" id="placeType" type="radio" value=country>Country
-      <input ngModel name="place" id="place" type="text" placeholder="Ex. Pittsburgh">
-      <ngx-slider ngModel name="priceSlider" [(value)]="minValue" [(highValue)]="maxValue" [options]="options" (valueChange)="minValChange()" (highValueChange)="maxValChange()"></ngx-slider>
-      <input type="submit" value="Submit">
+    <div class="form-div">
+      <div class="radio-div">
+        <input ngModel name="placeType" id="placeType" type="radio" value=city checked>City
+        <input ngModel name="placeType" id="placeType" type="radio" value=country>Country
+      </div>
+      <br>
+      <div class="text-input-div">
+        <input ngModel name="place" id="place" type="text" placeholder="Ex. Pittsburgh">
+      </div>
+      <br>
+      <div class="slider-div">
+        <ngx-slider ngModel name="priceSlider" [(value)]="minValue" [(highValue)]="maxValue" [options]="options"
+          (valueChange)="minValChange()" (highValueChange)="maxValChange()"></ngx-slider>
+      </div>
+      <br>
+      <div class="submit-div">
+        <input type="submit" value="Submit">
+      </div>
     </div>
   </form>
 </div>
