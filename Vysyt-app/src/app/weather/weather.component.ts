@@ -51,7 +51,7 @@ export class WeatherComponent {
       console.warn("get coord data", data);
       GlobalVars.globalLat = data[0]['lat'];
       GlobalVars.globalLon = data[0]['lon'];
-      console.log("lat: " + this.lat + "    long: " + this.long);
+      console.log("lat: " + GlobalVars.globalLat + "    long: " + GlobalVars.globalLon);
 
     })
     // this.wait(1000);
