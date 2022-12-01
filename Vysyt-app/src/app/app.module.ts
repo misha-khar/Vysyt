@@ -20,6 +20,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { OutputTestComponent } from './output-test/output-test.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
+import { WeatherComponent } from "./weather/weather.component";
+import { HttpClientModule } from "@angular/common/http";
+
 
 
 @NgModule({
@@ -31,6 +34,7 @@ import { FooterComponent } from './footer/footer.component';
     RequestParserComponent,
     OutputTestComponent,
     FooterComponent,
+    WeatherComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,6 +50,7 @@ import { FooterComponent } from './footer/footer.component';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
