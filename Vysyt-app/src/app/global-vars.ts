@@ -5,6 +5,7 @@ export class GlobalVars {
   // public static globalPlaceType: string;
   public static globalMinVal: number;
   public static globalMaxVal: number;
-
+  public static globalLat: number;
+  public static globalLon: number;
 
 }

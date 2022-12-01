@@ -15,9 +15,9 @@ import { Subscription } from 'rxjs';
 
 export class WeatherComponent {
   // city = 'Pittsburgh';
-  // lat = '40.44';
-  // lon = '79.99';
-  city: string;
+  lat: number;
+  long: number;
+  place: string;
   current_temp = ' degrees F';
   high_temp = ' degrees F';
   low_temp = ' degrees F';
@@ -27,7 +27,10 @@ export class WeatherComponent {
 
   constructor(private api: GetApiService, private sharedService: SharedService) {
     this.clickEventsubscription = this.sharedService.getClickEvent().subscribe(() => {
+      // this.getLatLong();
+      // this.wait(1000);
       this.showWeatherData();
+      // this.showWeatherData();
     })
   }
   ngOnInit() {
@@ -40,16 +43,39 @@ export class WeatherComponent {
     //   this.weather_description = data['weather'][0]['description'];
     // })
   }
+
+  getLatLong() {
+    // this.wait(1000);
+    this.place = GlobalVars.globalPlace;
+    this.api.getLatLong(this.place).subscribe((data) => {
+      console.warn("get coord data", data);
+      GlobalVars.globalLat = data[0]['lat'];
+      GlobalVars.globalLon = data[0]['lon'];
+      console.log("lat: " + this.lat + "    long: " + this.long);
+
+    })
+    // this.wait(1000);
+  }
+
   showWeatherData() {
-    this.city = GlobalVars.globalPlace;
-      this.api.getWeather().subscribe((data) => {
-        console.warn("get weather data", data);
-        this.current_temp = data['main']['temp'] + ' degrees F';
-        this.high_temp = data['main']['temp_max'] + ' degrees F';
-        this.low_temp = data['main']['temp_min'] + ' degrees F';
-        this.weather = data['weather'][0]['main'];
-        this.weather_description = data['weather'][0]['description'];
-      })
+    this.getLatLong();
+    this.place = GlobalVars.globalPlace;
+    this.api.getWeather().subscribe((data) => {
+      console.warn("get weather data", data);
+      this.current_temp = data['main']['temp'] + ' degrees F';
+      this.high_temp = data['main']['temp_max'] + ' degrees F';
+      this.low_temp = data['main']['temp_min'] + ' degrees F';
+      this.weather = data['weather'][0]['main'];
+      this.weather_description = data['weather'][0]['description'];
+    })
+  }
+
+  wait = (ms) => {
+    const start = Date.now();
+    let now = start;
+    while (now - start < ms) {
+      now = Date.now();
+    }
   }
 
 }
