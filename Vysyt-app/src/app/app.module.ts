@@ -47,7 +47,7 @@ import { HttpClientModule } from "@angular/common/http";
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    GooglePlaceModule
+    GooglePlaceModule,
     HttpClientModule,
   ],
   providers: [],
