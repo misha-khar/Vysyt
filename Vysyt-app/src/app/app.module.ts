@@ -15,12 +15,11 @@ import { MatInputModule } from '@angular/material/input';
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { FormsModule } from '@angular/forms';
 import { UserInputComponent } from './user-input/user-input.component';
-import { RequestParserComponent } from './request-parser/request-parser.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { OutputTestComponent } from './output-test/output-test.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
-
+import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
 
 @NgModule({
   declarations: [
@@ -28,7 +27,6 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     RefreshResultsButtonComponent,
     UserInputComponent,
-    RequestParserComponent,
     OutputTestComponent,
     FooterComponent,
   ],
@@ -46,6 +44,7 @@ import { FooterComponent } from './footer/footer.component';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    GooglePlaceModule
   ],
   providers: [],
   bootstrap: [AppComponent]

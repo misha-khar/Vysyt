@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { GlobalVars } from './global-vars';
+import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,8 +8,5 @@ import { GlobalVars } from './global-vars';
 })
 export class AppComponent {
   title = 'Vysyt';
-
-
-
 
 }

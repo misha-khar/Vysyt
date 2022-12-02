@@ -7,6 +7,9 @@ class request {
     private _city: City;
     private _country: Country;
 
+    private _query: string;
+    private _fields: string[];
+
     get priceLevel() {
         return this._priceLevel;
     }
@@ -23,11 +26,23 @@ class request {
         return this._country;
     }
 
-    constructor(priceLevel?: number, placeType?: string, city?: City, country?: Country) {
-        if(priceLevel) {this._priceLevel = priceLevel;}
-        if(placeType) {this._placeType = placeType;}
-        if(city) {this._city = city;}
-        if(country) {this._country = country;}
+    constructor(query?: string, fields?: string[]) {
+        if (query) {this._query = query;}
+        if (fields) {this._fields = fields;}
     }
+
+    public setQuery(query: string) {
+        this._query = query;
+    }
+
+    public addField(field: string) {
+        this._fields.push(field);
+    }
+
+    public removeAllFields() {
+        this._fields = [];
+    }
+
+
 
 }
