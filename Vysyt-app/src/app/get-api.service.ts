@@ -24,7 +24,7 @@ export class GetApiService {
 
   getWeather() {
     // this.wait(1000);
-    console.log("inside getWeatehr lat: " + GlobalVars.globalLat + ", lon: " + GlobalVars.globalLon);
+    console.log("inside getWeather lat: " + GlobalVars.globalLat + ", lon: " + GlobalVars.globalLon);
     this.request = "https://api.openweathermap.org/data/2.5/weather?lat=" + GlobalVars.globalLat + "&lon=" + GlobalVars.globalLon + "&appid=c599db7fa4f1b2d27ac508435f66b61f&units=imperial";
     return this.http.get(this.request);
     // return this.http.get('https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={long}&appid=c599db7fa4f1b2d27ac508435f66b61f&units=imperial');
