@@ -25,7 +25,7 @@ export class OutputTestComponent implements OnInit {
   }
 
   place: string;
-  placeType: string;
+  // placeType: string;
   minVal: number;
   maxVal: number;
 
@@ -34,7 +34,7 @@ export class OutputTestComponent implements OnInit {
 
   showGlobals() {
     this.place = GlobalVars.globalPlace;
-    this.placeType = GlobalVars.globalPlaceType;
+    // this.placeType = GlobalVars.globalPlaceType;
     this.minVal = GlobalVars.globalMinVal;
     this.maxVal = GlobalVars.globalMaxVal;
   }

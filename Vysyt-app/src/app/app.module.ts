@@ -20,6 +20,8 @@ import { OutputTestComponent } from './output-test/output-test.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
 import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
+import { WeatherComponent } from "./weather/weather.component";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -29,6 +31,7 @@ import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
     UserInputComponent,
     OutputTestComponent,
     FooterComponent,
+    WeatherComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,6 +48,7 @@ import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     GooglePlaceModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

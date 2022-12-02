@@ -15,7 +15,7 @@ export class UserInputComponent implements OnChanges {
   constructor(private sharedService:SharedService) { }
 
   place;
-  placeType;
+  // placeType;
   minVal;
   maxVal;
 
@@ -50,7 +50,7 @@ export class UserInputComponent implements OnChanges {
 
   onClickSubmit(data) {
     GlobalVars.globalPlace = data.place;
-    GlobalVars.globalPlaceType = data.placeType;
+    // GlobalVars.globalPlaceType = data.placeType;
     GlobalVars.globalMinVal = data.priceSlider[0];
     GlobalVars.globalMaxVal = data.priceSlider[1];
     alert("submitted")
