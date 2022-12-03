@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { GlobalVars } from './global-vars';
 @Injectable({
   providedIn: 'root'
 })
@@ -10,6 +11,6 @@ export class GetApiService {
   ) { }
 
   getWeather() {
-    return this.http.get('https://api.openweathermap.org/data/2.5/weather?lat=40.44&lon=79.99&appid=c599db7fa4f1b2d27ac508435f66b61f&units=imperial');
+    return this.http.get('https://api.openweathermap.org/data/2.5/weather?q=' + GlobalVars.globalPlace + '&appid=c599db7fa4f1b2d27ac508435f66b61f&units=imperial');
   }
 }
