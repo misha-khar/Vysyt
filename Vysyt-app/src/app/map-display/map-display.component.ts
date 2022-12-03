@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RequestParser } from '../request-parser';
 
 @Component({
   selector: 'app-map-display',
@@ -10,6 +11,7 @@ export class MapDisplayComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    var r = new RequestParser();
   }
 
 }

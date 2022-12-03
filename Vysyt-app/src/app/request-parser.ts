@@ -2,6 +2,22 @@ import './request';
 import { request } from './request';
 
 const pittsburgh = new google.maps.LatLng(40.441, -80.0);
+let map: google.maps.Map;
+
+function initMap(): void {
+  map = new google.maps.Map(document.getElementById("map") as HTMLElement, {
+    center: pittsburgh,
+    zoom: 8,
+  });
+}
+
+declare global {
+  interface Window {
+    initMap: () => void;
+  }
+}
+window.initMap = initMap;
+export {};
 
 export class RequestParser {
     private _map: google.maps.Map;
@@ -10,6 +26,7 @@ export class RequestParser {
     private _request: request;
     private _results: google.maps.places.PlaceResult[];
 
+    
     constructor() {
         this._infowindow = new google.maps.InfoWindow();
 
@@ -20,6 +37,13 @@ export class RequestParser {
 
         this._service = new google.maps.places.PlacesService(this._map);
         this._request = new request();
+    }
+
+    public initMap() {
+      this._map = new google.maps.Map(document.getElementById("map") as HTMLElement, {
+        center: pittsburgh,
+        zoom: 15,
+      });
     }
 
     public setQuery(query: string){
