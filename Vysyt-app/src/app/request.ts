@@ -1,7 +1,7 @@
 import './city';
 import './country';
 
-class request {
+export class request {
     private _priceLevel: number;
     private _placeType: string;
     private _city: City;
@@ -42,7 +42,5 @@ class request {
     public removeAllFields() {
         this._fields = [];
     }
-
-
 
 }
