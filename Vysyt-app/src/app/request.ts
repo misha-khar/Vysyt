@@ -43,4 +43,12 @@ export class request {
         this._fields = [];
     }
 
+    get query() {
+        return this._query;
+    }
+
+    get fields() {
+        return this._fields;
+    }
+
 }
