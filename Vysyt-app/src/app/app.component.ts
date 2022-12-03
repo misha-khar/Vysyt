@@ -1,17 +1,11 @@
 
-import { Component, OnInit } from '@angular/core';
-import { GlobalVars } from './global-vars';
-import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
+import { Component } from '@angular/core';
 import { RequestParser } from './request-parser';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent{
   title = 'Vysyt';
-
-  ngOnInit() {
-    let rp = new RequestParser();
-  }
 }
