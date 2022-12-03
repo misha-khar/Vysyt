@@ -44,7 +44,12 @@ export class WeatherComponent {
         this.low_temp = data['main']['temp_min'] + ' degrees F';
         this.weather = data['weather'][0]['main'];
         this.weather_description = data['weather'][0]['description'];
+        this.getIcon();
     })
+  }
+
+  getIcon() {
+
   }
 
 }
