@@ -22,6 +22,7 @@ import { FooterComponent } from './footer/footer.component';
 import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
 import { WeatherComponent } from "./weather/weather.component";
 import { HttpClientModule } from "@angular/common/http";
+import { MapDisplayComponent } from './map-display/map-display.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { HttpClientModule } from "@angular/common/http";
     OutputTestComponent,
     FooterComponent,
     WeatherComponent,
+    MapDisplayComponent,
   ],
   imports: [
     BrowserModule,
