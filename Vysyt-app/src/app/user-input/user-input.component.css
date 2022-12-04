@@ -1,9 +1,12 @@
 .wrapper {
+  /* border: solid red 5px; */
+  width: 50vw;
   margin: auto;
   position: relative;
   text-align: center;
-  height: 25vh;
-  width: 50vw;
+  /* height: 25vh;
+  width: 50vw; */
+  padding-bottom: 5%;
   /* background-color: antiquewhite; */
 }
 
