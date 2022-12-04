@@ -12,7 +12,7 @@ import { SharedService } from '../shared.service';
 })
 export class UserInputComponent implements OnChanges {
 
-  constructor(private sharedService:SharedService) { }
+  constructor(private sharedService: SharedService) { }
 
   place;
   // placeType;
@@ -29,7 +29,7 @@ export class UserInputComponent implements OnChanges {
         case LabelType.Low:
           GlobalVars.globalMinVal = value;
           var str = '';
-          for(var i = 0; i <= value; i++){
+          for (var i = 0; i <= value; i++) {
             str += '💲';
           }
 
@@ -37,7 +37,7 @@ export class UserInputComponent implements OnChanges {
         case LabelType.High:
           GlobalVars.globalMaxVal = value;
           var str = '';
-          for(var i = 0; i <= value; i++){
+          for (var i = 0; i <= value; i++) {
             str += '💲';
           }
           return "<b>Max price:</b>" + str;
@@ -47,12 +47,12 @@ export class UserInputComponent implements OnChanges {
     }
   }
 
-  minValChange(){
+  minValChange() {
     GlobalVars.globalMinVal = this.minValue;
     this.minVal = GlobalVars.globalMinVal;
   }
 
-  maxValChange(){
+  maxValChange() {
     GlobalVars.globalMaxVal = this.maxValue;
     this.maxVal = GlobalVars.globalMinVal;
   }
@@ -69,7 +69,7 @@ export class UserInputComponent implements OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    console.log(changes);
+    // console.log(changes);
   }
 
 

@@ -28,6 +28,8 @@ export class OutputTestComponent implements OnInit {
   // placeType: string;
   minVal: number;
   maxVal: number;
+  lat: number;
+  lon: number;
 
   ngOnInit() {
   }
@@ -37,6 +39,8 @@ export class OutputTestComponent implements OnInit {
     // this.placeType = GlobalVars.globalPlaceType;
     this.minVal = GlobalVars.globalMinVal;
     this.maxVal = GlobalVars.globalMaxVal;
+    this.lat = GlobalVars.globalLat;
+    this.lon = GlobalVars.globalLon;
   }
 
 }

@@ -1,3 +1,43 @@
-div {
-    border: 5px solid orange;
+.wrapper {
+  /* border: 5px solid orange; */
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+
+img[class="loc"] {
+  height: 2em;
+  /* padding-top: 15%; */
+}
+
+img[class="thermo"] {
+  height: 2em;
+}
+
+img[class="high"] {
+  height: 2em;
+}
+
+img[class="low"] {
+  height: 2em;
+}
+
+h1 {
+  text-transform: capitalize;
+  display: inline;
+}
+
+h2 {
+  text-transform: capitalize;
+  display: inline;
+}
+
+h3 {
+  text-transform: capitalize;
+  display: inline;
+}
+
+h4 {
+  text-transform: capitalize;
+  display: inline;
 }

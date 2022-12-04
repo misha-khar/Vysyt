@@ -18,9 +18,9 @@ export class WeatherComponent {
   lat: number;
   long: number;
   place: string;
-  current_temp = ' degrees F';
-  high_temp = ' degrees F';
-  low_temp = ' degrees F';
+  current_temp = '';
+  high_temp = '';
+  low_temp = '';
   weather = '';
   weather_description = '';
   clickEventsubscription: Subscription;
@@ -62,9 +62,9 @@ export class WeatherComponent {
     this.place = GlobalVars.globalPlace;
     this.api.getWeather().subscribe((data) => {
       console.warn("get weather data", data);
-      this.current_temp = data['main']['temp'] + ' degrees F';
-      this.high_temp = data['main']['temp_max'] + ' degrees F';
-      this.low_temp = data['main']['temp_min'] + ' degrees F';
+      this.current_temp = data['main']['temp'] + '° F';
+      this.high_temp = data['main']['temp_max'] + '° F';
+      this.low_temp = data['main']['temp_min'] + '° F';
       this.weather = data['weather'][0]['main'];
       this.weather_description = data['weather'][0]['description'];
     })

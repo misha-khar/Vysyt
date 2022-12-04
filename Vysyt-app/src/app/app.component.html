@@ -1,11 +1,15 @@
 <div class="app">
   <div class="wrapper">
+
     <!-- <h1>{{title}}</h1> -->
-    <app-header></app-header>
-    <app-user-input></app-user-input>
+    <app-header class="header"></app-header>
+    <app-user-input class="input"></app-user-input>
     <app-output-test></app-output-test>
-    <app-map-display></app-map-display>
-    <app-weather></app-weather>
+    <div class="results-container">
+      <app-weather class="weather"></app-weather>
+      <app-map-display class="map"></app-map-display>
+
+    </div>
     <app-footer></app-footer>
     <!-- <app-refresh-results-button></app-refresh-results-button> -->
   </div>

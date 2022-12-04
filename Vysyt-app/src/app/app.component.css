@@ -43,6 +43,7 @@ button:disabled {
 }
 .app{
   margin: auto;
+
 }
 
 .wrapper{
@@ -50,6 +51,29 @@ button:disabled {
   /* margin: auto; */
   margin-right: 5%;
   margin-left: 5%;
-  max-height: 90%;
-  margin-top: 5%;
+  max-height: 100%;
+  margin-top: 0%;
+}
+.results-container{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.header{
+  /* height: 25vh;
+  width: 50vw; */
+}
+.input{
+  /* height: 25vh;
+  width: 50vw; */
+}
+.weather{
+  width: 100%;
+  height: 100%;
+}
+.map{
+  width: 100%;
+  height: 100%;
 }
