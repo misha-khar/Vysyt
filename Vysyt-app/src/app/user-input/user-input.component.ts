@@ -20,20 +20,29 @@ export class UserInputComponent implements OnChanges {
   maxVal;
 
   minValue: number = 0;
-  maxValue: number = 5;
+  maxValue: number = 4;
   options: Options = {
     floor: 0,
-    ceil: 5,
+    ceil: 4,
     translate: (value: number, label: LabelType): string => {
       switch (label) {
         case LabelType.Low:
           GlobalVars.globalMinVal = value;
-          return "<b>Min price:</b> $" + value;
+          var str = '';
+          for(var i = 0; i <= value; i++){
+            str += '💲';
+          }
+
+          return "<b>Min price:</b>" + str;
         case LabelType.High:
           GlobalVars.globalMaxVal = value;
-          return "<b>Max price:</b> $" + value;
+          var str = '';
+          for(var i = 0; i <= value; i++){
+            str += '💲';
+          }
+          return "<b>Max price:</b>" + str;
         default:
-          return "$" + value;
+          return '💲';
       }
     }
   }
@@ -53,14 +62,16 @@ export class UserInputComponent implements OnChanges {
     // GlobalVars.globalPlaceType = data.placeType;
     GlobalVars.globalMinVal = data.priceSlider[0];
     GlobalVars.globalMaxVal = data.priceSlider[1];
-    alert("submitted")
+    // alert("submitted")
     this.sharedService.sendClickEvent();
     console.log(data)
+
   }
 
   ngOnChanges(changes: SimpleChanges) {
     console.log(changes);
   }
+
 
 
 }

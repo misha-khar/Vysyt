@@ -10,13 +10,13 @@ export class RequestParser {
     private _request: request;
     private _results: google.maps.places.PlaceResult[];
 
-    
+
     constructor() {
         this._infowindow = new google.maps.InfoWindow();
 
         this._map = new google.maps.Map(document.getElementById("map") as HTMLElement, {
           center: pittsburgh,
-          zoom: 7,
+          zoom: 12,
         });
 
         this._service = new google.maps.places.PlacesService(this._map);
@@ -66,12 +66,12 @@ export class RequestParser {
 
     private _createMarker(place: google.maps.places.PlaceResult) {
       if (!place.geometry || !place.geometry.location) return;
-    
+
       const marker = new google.maps.Marker({
         map: this._map,
         position: place.geometry.location,
       });
-    
+
       google.maps.event.addListener(marker, "click", () => {
         this._infowindow.setContent(place.name || "");
         this._infowindow.open(this._map);
