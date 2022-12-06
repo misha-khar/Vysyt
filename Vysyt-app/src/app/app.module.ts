@@ -15,15 +15,14 @@ import { MatInputModule } from '@angular/material/input';
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { FormsModule } from '@angular/forms';
 import { UserInputComponent } from './user-input/user-input.component';
-import { RequestParserComponent } from './request-parser/request-parser.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { OutputTestComponent } from './output-test/output-test.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
+import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
 import { WeatherComponent } from "./weather/weather.component";
 import { HttpClientModule } from "@angular/common/http";
-
-
+import { MapDisplayComponent } from './map-display/map-display.component';
 
 @NgModule({
   declarations: [
@@ -31,10 +30,10 @@ import { HttpClientModule } from "@angular/common/http";
     HeaderComponent,
     RefreshResultsButtonComponent,
     UserInputComponent,
-    RequestParserComponent,
     OutputTestComponent,
     FooterComponent,
     WeatherComponent,
+    MapDisplayComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,6 +49,7 @@ import { HttpClientModule } from "@angular/common/http";
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    GooglePlaceModule,
     HttpClientModule,
   ],
   providers: [],

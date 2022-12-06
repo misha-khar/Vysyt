@@ -13,7 +13,7 @@ export class FooterComponent implements OnInit {
   dev2 = 'Zane Zeppuhar';
   dev2LI = "https://www.linkedin.com/in/zane-zeppuhar-849197208/";
   dev3 = 'John Pepling';
-  dev3LI = "https://www.linkedin.com/";
+  dev3LI = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   dev4 = 'Ibrahim Qutyan';
   dev4LI = "https://www.linkedin.com/";
 

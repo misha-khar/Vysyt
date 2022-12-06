@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RequestParserComponent } from './request-parser.component';
+import { MapDisplayComponent } from './map-display.component';
 
-describe('RequestParserComponent', () => {
-  let component: RequestParserComponent;
-  let fixture: ComponentFixture<RequestParserComponent>;
+describe('MapDisplayComponent', () => {
+  let component: MapDisplayComponent;
+  let fixture: ComponentFixture<MapDisplayComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RequestParserComponent ]
+      declarations: [ MapDisplayComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(RequestParserComponent);
+    fixture = TestBed.createComponent(MapDisplayComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
