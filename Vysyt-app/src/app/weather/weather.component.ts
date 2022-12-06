@@ -26,9 +26,9 @@ export class WeatherComponent {
   city = '';
   lat = '';
   lon = '';
-  current_temp = ' degrees F';
-  high_temp = ' degrees F';
-  low_temp = ' degrees F';
+  current_temp = '';
+  high_temp = '';
+  low_temp = '';
 //>>>>>>> weather-integration
   weather = '';
   weather_description = '';
@@ -90,9 +90,9 @@ export class WeatherComponent {
         this.city = GlobalVars.globalPlace;
         this.lat = data['coord']['lat'];
         this.lon = data['coord']['lon'];
-        this.current_temp = data['main']['temp'] + ' degrees F';
-        this.high_temp = data['main']['temp_max'] + ' degrees F';
-        this.low_temp = data['main']['temp_min'] + ' degrees F';
+        this.current_temp = data['main']['temp'] + '° F';
+        this.high_temp = data['main']['temp_max'] + '° F';
+        this.low_temp = data['main']['temp_min'] + '° F';
         this.weather = data['weather'][0]['main'];
         this.weather_description = data['weather'][0]['description'];
         this.getIcon();
