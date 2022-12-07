@@ -29,17 +29,16 @@ export class GetApiService {
     //this.request = "https://api.openweathermap.org/data/2.5/weather?lat=" + GlobalVars.globalLat + "&lon=" + GlobalVars.globalLon + "&appid=c599db7fa4f1b2d27ac508435f66b61f&units=imperial";
     //return this.http.get(this.request);
     // return this.http.get('https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={long}&appid=c599db7fa4f1b2d27ac508435f66b61f&units=imperial');
-//=======
+
     return this.http.get('https://api.openweathermap.org/data/2.5/weather?q=' + GlobalVars.globalPlace + '&appid=c599db7fa4f1b2d27ac508435f66b61f&units=imperial');
-//>>>>>>> weather-integration
   }
 
-  wait = (ms) => {
-    const start = Date.now();
-    let now = start;
-    while (now - start < ms) {
-      now = Date.now();
-    }
-  }
+  // wait = (ms) => {
+  //   const start = Date.now();
+  //   let now = start;
+  //   while (now - start < ms) {
+  //     now = Date.now();
+  //   }
+  // }
 
 }
