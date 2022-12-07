@@ -1,43 +1,19 @@
-<!--<<<<<<< main-->
-<!--<div class="wrapper">
-     Place: {{place}} -->
-    <!-- ({{lat}} N, {{lon}} W) -->
-    <!-- <img class="loc" src="../assets/icons/location.png"><h1>{{city}}</h1>
-    <br><br>
-    <img class="thermo" src="../assets/icons/thermostat.png">&emsp;
-    <h2>{{current_temp}}</h2>
-    <br><br>
-    <img class="high" src="../assets/icons/up_arrow.png">&emsp;
-    <h2>{{high_temp}}</h2>
-    <br><br>
-    <img class="low" src="../assets/icons/down_arrow.png">&emsp;
-    <h2>{{low_temp}}</h2>
-    <br><br>  -->
-    <!--<h2>{{weather_description}}</h2>-->
-
-    <!-- <p>Current Temperature: {{current_temp}}</p> -->
-    <!-- <p> High: {{high_temp}} </p>
-=======-->
 <div class="wrapper">
     <div class = "header">
-        <h1> Weather in {{city}}</h1>
+        <h1><strong>{{city}}</strong></h1>
     </div>
     <div class = "bottom">
     <div class = 'stats'>
-        <dl>
-            <dt>Coordinates: </dt>
-            <dd>({{lat}}° N, {{lon}}° W)</dd>
-            <dt>Current Temperature: </dt>
-            <dd>{{current_temp}}° F</dd>
-            <dt>High Temperature: </dt>
-            <dd>{{high_temp}}° F</dd>
-            <dt>Low Temperature: </dt>
-            <dd>{{low_temp}}° F</dd>
-        </dl>
+        <img class="thermo" src="../assets/icons/thermostat.png">&emsp;
+        <p>{{current_temp}}° F</p>
+        <img class="high" src="../assets/icons/up_arrow.png">&emsp;
+        <p>{{high_temp}}° F</p>
+        <img class="low" src="../assets/icons/down_arrow.png">&emsp;
+        <p>{{low_temp}}° F</p>
     </div>
     <div class = "icon">
         <h3>{{weather}} ({{weather_description}})</h3>
-        <img src="http://openweathermap.org/img/wn/{{icon_id}}@2x.png" />
+        <img class = "imgIcon" src="http://openweathermap.org/img/wn/{{icon_id}}@2x.png" />
     </div>
     </div>
 </div>
