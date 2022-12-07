@@ -5,6 +5,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 import { userInputs } from '../userInputs';
 import { GlobalVars } from '../global-vars';
 import { SharedService } from '../shared.service';
+import { RequestParser } from '../request-parser';
 @Component({
   selector: 'app-user-input',
   templateUrl: './user-input.component.html',
@@ -62,6 +63,12 @@ export class UserInputComponent implements OnChanges {
     // GlobalVars.globalPlaceType = data.placeType;
     GlobalVars.globalMinVal = data.priceSlider[0];
     GlobalVars.globalMaxVal = data.priceSlider[1];
+
+    let r = new RequestParser();
+    r.setQuery(data.place);
+    r.addField('name');
+    r.addField('geometry');
+    r.sendRequest();
     // alert("submitted")
     this.sharedService.sendClickEvent();
     console.log(data)
