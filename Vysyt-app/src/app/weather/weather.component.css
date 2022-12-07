@@ -1,15 +1,16 @@
 .wrapper {
-  border: 5px solid lightskyblue; 
+  border: 5px solid lightskyblue;
   background: lightskyblue;
   border-radius: 10px;
   padding-top: 5%;
   margin: 0;
   padding: 0;
   align-items: center;
-  
+
   float:left;
   width:80%;
-  
+  text-transform: capitalize;
+
 }
 
 .header {
@@ -36,7 +37,7 @@
   padding: 0;
   background: lightskyblue;
   text-align: left;
-  
+
 }
 .icon {
   text-align: center;
@@ -67,7 +68,7 @@ p {
 }
 /* img[class="loc"] {
   height: 2em;
-  //padding-top: 15%; 
+  //padding-top: 15%;
 } */
 
 /* img[class="thermo"] {

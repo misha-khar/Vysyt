@@ -40,7 +40,7 @@ export class WeatherComponent {
 
   getApiData() {
     this.api.getWeather().subscribe((data) => {
-        console.log("get weather data", data);
+        // console.log("get weather data", data);
         this.city = GlobalVars.globalPlace;
         this.lat = data['coord']['lat'];
         this.lon = data['coord']['lon'];
