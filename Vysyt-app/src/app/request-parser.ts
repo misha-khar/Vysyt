@@ -64,8 +64,8 @@ export class RequestParser {
         }
       );
       console.log(this._results);
-      console.log(this._results[0].geometry!.location!.lat());
-      console.log(this._results[0].geometry!.location!.lng());
+      //console.log("getting lat: " + this._results[0].geometry!.location!.lat());
+      //console.log("getting lng: " + this._results[0].geometry!.location!.lng());
 
       return true
     }
