@@ -27,8 +27,8 @@ export class request {
     }
 
     constructor(query?: string, fields?: string[]) {
-        if (query) {this._query = query;}
-        if (fields) {this._fields = fields;}
+        if (query) {this._query = query;} else {this._query = "";}
+        if (fields) {this._fields = fields;} else {this._fields = [];}
     }
 
     public setQuery(query: string) {
