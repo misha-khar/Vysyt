@@ -1,3 +1,4 @@
+import { GlobalVars } from './global-vars';
 import './request';
 import { request } from './request';
 
@@ -8,7 +9,7 @@ export class RequestParser {
     private _service: google.maps.places.PlacesService;
     private _infowindow: google.maps.InfoWindow;
     private _request: request;
-    private _results: google.maps.places.PlaceResult[];
+    private _results: google.maps.places.PlaceResult[] = [];
 
 
     constructor() {
@@ -57,9 +58,14 @@ export class RequestParser {
             this._results.push(results[0]);
             this._createMarker(results[0]);
             this._map.setCenter(results[0].geometry!.location!);
+            
+          } else {
+            console.log("Request Failed");
           }
         }
       );
+      
+      console.log(this._results[0].geometry!.location!.lat);
 
       return true
     }
@@ -76,5 +82,8 @@ export class RequestParser {
         this._infowindow.setContent(place.name || "");
         this._infowindow.open(this._map);
       });
+    }
+
+    private _queryNearby() {
     }
 }
