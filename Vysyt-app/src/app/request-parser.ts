@@ -11,7 +11,6 @@ export class RequestParser {
     private _request: request;
     private _results: google.maps.places.PlaceResult[] = [];
 
-
     constructor() {
         this._infowindow = new google.maps.InfoWindow();
 
@@ -58,14 +57,15 @@ export class RequestParser {
             this._results.push(results[0]);
             this._createMarker(results[0]);
             this._map.setCenter(results[0].geometry!.location!);
-            
+
           } else {
             console.log("Request Failed");
           }
         }
       );
-      
-      console.log(this._results[0].geometry!.location!.lat);
+      console.log(this._results);
+      console.log(this._results[0].geometry!.location!.lat());
+      console.log(this._results[0].geometry!.location!.lng());
 
       return true
     }
@@ -85,5 +85,6 @@ export class RequestParser {
     }
 
     private _queryNearby() {
+
     }
 }
