@@ -22,16 +22,15 @@ export class WeatherComponent {
   //current_temp = '';
   //high_temp = '';
   //low_temp = '';
-//=======
-  city = '';
+  city = '(City)';
   lat = '';
   lon = '';
   current_temp = '';
   high_temp = '';
   low_temp = '';
-//>>>>>>> weather-integration
   weather = '';
   weather_description = '';
+  icon_id = '';
   clickEventsubscription: Subscription;
 
   constructor(private api: GetApiService, private sharedService: SharedService) {
@@ -41,9 +40,7 @@ export class WeatherComponent {
       // this.wait(1000);
       //this.showWeatherData();
       // this.showWeatherData();
-//=======
       this.getApiData();
-//>>>>>>> weather-integration
     })
   }
 
@@ -90,18 +87,12 @@ export class WeatherComponent {
         this.city = GlobalVars.globalPlace;
         this.lat = data['coord']['lat'];
         this.lon = data['coord']['lon'];
-        this.current_temp = data['main']['temp'] + '° F';
-        this.high_temp = data['main']['temp_max'] + '° F';
-        this.low_temp = data['main']['temp_min'] + '° F';
+        this.current_temp = data['main']['temp'];
+        this.high_temp = data['main']['temp_max'];
+        this.low_temp = data['main']['temp_min'];
         this.weather = data['weather'][0]['main'];
         this.weather_description = data['weather'][0]['description'];
-        this.getIcon();
+        this.icon_id = data['weather'][0]['icon'];
     })
   }
-
-  getIcon() {
-
-//>>>>>>> weather-integration
-  }
-
 }

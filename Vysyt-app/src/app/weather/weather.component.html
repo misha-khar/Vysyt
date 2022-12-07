@@ -1,6 +1,6 @@
 <!--<<<<<<< main-->
 <!--<div class="wrapper">
-    <!-- Place: {{place}} -->
+     Place: {{place}} -->
     <!-- ({{lat}} N, {{lon}} W) -->
     <img class="loc" src="../assets/icons/location.png"><h1>{{city}}</h1>
     <br><br>
@@ -12,18 +12,32 @@
     <br><br>
     <img class="low" src="../assets/icons/down_arrow.png">&emsp;
     <h2>{{low_temp}}</h2>
-    <br><br>
-    <h2>{{weather_description}}</h2>
+    <br><br> -->
+    <!--<h2>{{weather_description}}</h2>-->
 
     <!-- <p>Current Temperature: {{current_temp}}</p> -->
     <!-- <p> High: {{high_temp}} </p>
 =======-->
-<div>
-    <h1> Weather</h1>
-    <p> City: {{city}} ({{lat}} N, {{lon}} W)</p>
-    <p> Current Temperature: {{current_temp}}</p>
-    <p> High: {{high_temp}} </p>
-<!-->>>>>>> weather-integration-->
-    <p> Low: {{low_temp}}</p>
-    <p> Weather: {{weather}} ({{weather_description}})</p> -->
+<div class="wrapper">
+    <div class = "header">
+        <h1> Weather in {{city}}</h1>
+    </div>
+    <div class = "bottom">
+    <div class = 'stats'>
+        <dl>
+            <dt>Coordinates: </dt>
+            <dd>({{lat}}° N, {{lon}}° W)</dd>
+            <dt>Current Temperature: </dt>
+            <dd>{{current_temp}}° F</dd>
+            <dt>High Temperature: </dt>
+            <dd>{{high_temp}}° F</dd>
+            <dt>Low Temperature: </dt>
+            <dd>{{low_temp}}° F</dd>
+        </dl>
+    </div>
+    <div class = "icon">
+        <h3>{{weather}} ({{weather_description}})</h3>
+        <img src="http://openweathermap.org/img/wn/{{icon_id}}@2x.png" />
+    </div>
+    </div>
 </div>
