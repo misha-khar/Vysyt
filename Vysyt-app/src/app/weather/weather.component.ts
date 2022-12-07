@@ -45,6 +45,8 @@ export class WeatherComponent {
   }
 
   ngOnInit() {
+    GlobalVars.globalPlace = 'Pittsburgh';
+    this.getApiData();
   }
 
 //<<<<<<< main
