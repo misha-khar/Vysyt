@@ -64,11 +64,16 @@ export class UserInputComponent implements OnChanges {
     GlobalVars.globalMinVal = data.priceSlider[0];
     GlobalVars.globalMaxVal = data.priceSlider[1];
 
-    let r = new RequestParser();
-    r.setQuery(data.place);
-    r.addField('name');
-    r.addField('geometry');
-    r.sendRequest();
+    try {
+      let r = new RequestParser();
+      r.setQuery(data.place);
+      r.addField('name');
+      r.addField('geometry');
+      r.sendRequest();
+    } catch (error) {
+      console.error();
+    }
+
     // alert("submitted")
     this.sharedService.sendClickEvent();
     console.log(data)
