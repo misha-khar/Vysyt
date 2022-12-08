@@ -1,60 +1,76 @@
 .wrapper {
   background: rgb(182, 227, 255);
   border-radius: 10px;
-  margin: auto;
   padding: 0;
-  width: auto;
+  width: 40vw;
   text-transform: capitalize;
   height:50vh;
+  min-height: 425px;
+  
 }
 
 .header {
-  padding-top: 10px;
-  padding-right: 20px;
+  padding-top: 40pt;
   text-align: center;
 }
 
 h1 {
   display:inline-block;
-  vertical-align: middle;
+  font-size:40px;
 }
 
 .location {
   padding-left: 10px;
-  max-height: 25px;
+  max-height: 40px;
 }
 
-
-
 .stats {
+  width:30%;
+  padding-top:30px;
   margin-top: auto;
   margin-bottom: auto;
   margin: 0;
   padding: 0;
   padding-left: 30px;
+  float:left;
   background: rgb(182, 227, 255);
   text-align: left;
-  
 }
 
-.thermo, .high, .low, .windspeed, .cloudiness {
-  padding-left: 10px;
-  padding-right: 5px;
-  max-height: 25px;
+/* .thermo, .thermoh2 {
+  padding-top: 25pt;
+} */
+
+.thermo, .high, .low, .windspeed, .humidity {
+  padding-bottom: 25pt;
+  vertical-align: top;
 }
+
+.thermoh2, .highh2, .lowh2, .windspeedh2, .humidityh2 {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 10px;
+  padding-bottom: 25pt;
+  max-height: 15px;
+}
+
 
 .icon {
+  width:70%;
   text-align: center;
+  padding-left: 150pt;
   background: rgb(182, 227, 255);
   margin: 0;
-  padding: 0;
+  vertical-align: middle;
+  height: 80%;
+  float:center;
 }
 
-h3 {
-  padding-top: 20px;
+.iconh2 {
+  padding-top: 45px;
 }
 
 .imgIcon {
-  min-height: 100px;
   background: rgb(182, 227, 255);
+  height: 50%;
 }

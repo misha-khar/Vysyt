@@ -1,26 +1,35 @@
 <div class="wrapper">
     <div class = "header">
-        <img class="location" src="../assets/icons/location.png">&emsp;
-        <h1><strong>{{city}}</strong></h1>
+        <!--<img class="location" src="../assets/icons/location.png">&emsp;
+        <h1><strong>{{city}}</strong></h1>-->
     </div>
     <div class = 'stats'>
-        <div class="left">
-            <img class="thermo" src="../assets/icons/thermostat.png">&emsp;
-            <p class="thermop"><strong>{{current_temp}}° F</strong></p>&emsp;
-            <img class="high" src="../assets/icons/up_arrow.png">&emsp;
-            <p class="highp"><strong>{{high_temp}}° F</strong></p>&emsp;
-            <img class="low" src="../assets/icons/down_arrow.png">&emsp;
-            <p class="lowp"><strong>{{low_temp}}° F</strong></p>&emsp;
+        <div>
+            <img class="thermo" src="../assets/icons/thermostat.png">
+            <h2 class="thermoh2"><strong><font size = "+3">{{current_temp}}° F</font></strong></h2>
         </div>
-        <div class="right">
-            <img class="windspeed" src="../assets/icons/air.png">&emsp;
-            <p class="windspeedp"><strong>{{wind_speed}} mph</strong></p>&emsp;
-            <img class="cloudiness" src="../assets/icons/humidity.png">&emsp;
-            <p class="cloudinessp"><strong>{{humidity}}%</strong></p>&emsp;
+        <div>
+            <img class="high" src="../assets/icons/up_arrow.png">
+            <h2 class="highh2"><font size = "+3"><strong>{{high_temp}}° F</strong></font></h2>
+        </div>
+        <div>
+            <img class="low" src="../assets/icons/down_arrow.png">
+            <h2 class="lowh2"><font size = "+3"><strong>{{low_temp}}° F</strong></font></h2>
+        </div>
+        <div>
+            <img class="windspeed" src="../assets/icons/air.png">
+            <h2 class="windspeedh2"><font size = "+3"><strong>{{wind_speed}} mph</strong></font></h2>
+        </div>
+        <div>
+            <img class="humidity" src="../assets/icons/humidity.png">
+            <h2 class="humidityh2"><font size = "+3"><strong>{{humidity}}%</strong></font></h2>
         </div>
     </div>
     <div class = "icon">
-        <h3>{{weather}} ({{weather_description}})</h3>
+        <img class="location" src="../assets/icons/location.png">&emsp;
+        <h1><strong>{{city}}</strong></h1>
+        <h2 class = "iconh2"><font size = "+3">{{weather_description}}</font></h2>
         <img class = "imgIcon" src="http://openweathermap.org/img/wn/{{icon_id}}@2x.png" />
+     
     </div>
 </div>
