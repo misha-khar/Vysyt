@@ -67,3 +67,17 @@ body {
   font-family: 'Roboto-ThinItalic';
   src: url(assets/fonts/Roboto-ThinItalic.ttf);
 }
+
+.slider-div .ngx-slider .ngx-slider-selection {
+  background: #7ac943 !important;
+}
+
+.slider-div .ngx-slider .ngx-slider-pointer {
+  background: #ff931e !important;
+}
+
+.slider-div .ngx-slider .ngx-slider-pointer::after {
+  background: #d5ecc6 !important;
+}
+
+

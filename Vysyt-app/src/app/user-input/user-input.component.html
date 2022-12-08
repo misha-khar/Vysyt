@@ -7,13 +7,14 @@
         <input ngModel name="placeType" id="placeType" type="radio" value=country>Country
       </div>
       <br> -->
-
-      <mat-form-field appearance="fill">
-        <mat-label>Place Input Field</mat-label>
-        <div class="text-input-div">
-          <input ngModel matInput name="place" id="place" type="text" placeholder="Ex. Pittsburgh">
-        </div>
-      </mat-form-field>
+      <div class="txtInput">
+        <mat-form-field appearance="fill">
+          <mat-label>Place Input Field</mat-label>
+          <div class="text-input-div">
+            <input ngModel matInput name="place" id="place" type="text" placeholder="Ex. Pittsburgh">
+          </div>
+        </mat-form-field>
+      </div>
 
       <br>
       <div class="slider-div">
@@ -23,7 +24,6 @@
       <br>
       <div class="submit-div">
         <input mat-raised-button type="submit" value="Submit">
-        <!-- <br>(please press button for each request twice due to 🐛) -->
       </div>
     </div>
   </form>

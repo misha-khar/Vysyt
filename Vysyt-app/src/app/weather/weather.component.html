@@ -1,35 +1,53 @@
 <div class="wrapper">
-    <div class = "header">
-        <!--<img class="location" src="../assets/icons/location.png">&emsp;
-        <h1><strong>{{city}}</strong></h1>-->
-    </div>
-    <div class = 'stats'>
-        <div>
-            <img class="thermo" src="../assets/icons/thermostat.png">
-            <h2 class="thermoh2"><strong><font size = "+3">{{current_temp}}° F</font></strong></h2>
+
+    <div class="parent">
+
+        <div class="temp">
+            <img class="thermo" style="vertical-align:middle" src="../assets/icons/thermostat.png">
+            <h2 class="thermoh2" style="vertical-align:middle"><strong>
+                    <font size="+3" style="vertical-align:middle">{{current_temp}}° F</font>
+                </strong></h2>
         </div>
-        <div>
-            <img class="high" src="../assets/icons/up_arrow.png">
-            <h2 class="highh2"><font size = "+3"><strong>{{high_temp}}° F</strong></font></h2>
+
+        <div class="high">
+            <img class="high2" style="vertical-align:middle" src="../assets/icons/up_arrow.png">
+            <h2 class="highh2" style="vertical-align:middle">
+                <font size="+3" style="vertical-align:middle"><strong>{{high_temp}}° F</strong></font>
+            </h2>
         </div>
-        <div>
-            <img class="low" src="../assets/icons/down_arrow.png">
-            <h2 class="lowh2"><font size = "+3"><strong>{{low_temp}}° F</strong></font></h2>
+
+        <div class="low">
+            <img class="low2" style="vertical-align:middle" src="../assets/icons/down_arrow.png">
+            <h2 class="lowh2" style="vertical-align:middle">
+                <font size="+3" style="vertical-align:middle"><strong>{{low_temp}}° F</strong></font>
+            </h2>
         </div>
-        <div>
-            <img class="windspeed" src="../assets/icons/air.png">
-            <h2 class="windspeedh2"><font size = "+3"><strong>{{wind_speed}} mph</strong></font></h2>
+
+        <div class="wind">
+            <img class="windspeed" style="vertical-align:middle" src="../assets/icons/air.png">
+            <h2 class="windspeedh2" style="vertical-align:middle">
+                <font size="+3" style="vertical-align:middle"><strong>{{wind_speed}} mph</strong></font>
+            </h2>
         </div>
-        <div>
-            <img class="humidity" src="../assets/icons/humidity.png">
-            <h2 class="humidityh2"><font size = "+3"><strong>{{humidity}}%</strong></font></h2>
+
+        <div class="hum">
+            <img class="humidityIcon" style="vertical-align:middle" src="../assets/icons/humidity.png">
+            <h2 class="humidityh2" style="vertical-align:middle">
+                <font size="+3" style="vertical-align:middle"><strong>{{humidity}}%</strong></font>
+            </h2>
         </div>
-    </div>
-    <div class = "icon">
-        <img class="location" src="../assets/icons/location.png">&emsp;
-        <h1><strong>{{city}}</strong></h1>
-        <h2 class = "iconh2"><font size = "+3">{{weather_description}}</font></h2>
-        <img class = "imgIcon" src="http://openweathermap.org/img/wn/{{icon_id}}@2x.png" />
-     
+
+        <div class="location">
+            <img class="location2" src="../assets/icons/location.png">&emsp;
+            <h1><strong>{{city}}</strong></h1>
+        </div>
+
+        <div class="desc">
+            <h2 class="iconh2">
+                <font size="+3">{{weather_description}}</font>
+            </h2>
+            <br>
+            <img class="imgIcon" src="http://openweathermap.org/img/wn/{{icon_id}}@2x.png" />
+        </div>
     </div>
 </div>

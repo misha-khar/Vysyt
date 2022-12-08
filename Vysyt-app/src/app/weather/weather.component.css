@@ -1,76 +1,84 @@
 .wrapper {
-  background: rgb(182, 227, 255);
-  border-radius: 10px;
-  padding: 0;
-  width: 40vw;
+  /* background-color: azure; */
+  /* border-radius: 10px; */
+  /* padding: 0; */
+  /* width: 40vw; */
   text-transform: capitalize;
-  height:50vh;
-  min-height: 425px;
-  
-}
+  /* height:50vh; */
+  /* min-height: 425px; */
+  vertical-align: middle;
 
-.header {
-  padding-top: 40pt;
-  text-align: center;
 }
 
 h1 {
-  display:inline-block;
-  font-size:40px;
+  display: inline;
+  font-size: 35px;
+}
+
+h2 {
+  display: inline;
+}
+
+@media (max-width: 1000px) {}
+
+img {
+  padding-right: 2%;
+}
+
+.parent {
+  padding: 5%;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 3px;
+  grid-row-gap: 3px;
+}
+
+.temp,
+.high,
+.low,
+.wind,
+.hum {
+  /* border: solid 2px black; */
+  padding-left: 20%;
+  padding-top: 2%;
+}
+
+.temp {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.high {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.low {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.wind {
+  grid-area: 4 / 1 / 5 / 2;
+}
+
+.hum {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.location,
+.desc {
+  padding-right: 50%;
 }
 
 .location {
-  padding-left: 10px;
-  max-height: 40px;
-}
-
-.stats {
-  width:30%;
-  padding-top:30px;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin: 0;
-  padding: 0;
-  padding-left: 30px;
-  float:left;
-  background: rgb(182, 227, 255);
-  text-align: left;
-}
-
-/* .thermo, .thermoh2 {
-  padding-top: 25pt;
-} */
-
-.thermo, .high, .low, .windspeed, .humidity {
-  padding-bottom: 25pt;
-  vertical-align: top;
-}
-
-.thermoh2, .highh2, .lowh2, .windspeedh2, .humidityh2 {
-  display: inline-block;
-  vertical-align: middle;
-  padding-left: 10px;
-  padding-bottom: 25pt;
-  max-height: 15px;
-}
-
-
-.icon {
-  width:70%;
+  padding-top: 15%;
+  grid-area: 1 / 2 / 3 / 3;
+  /* border: solid 2px black; */
   text-align: center;
-  padding-left: 150pt;
-  background: rgb(182, 227, 255);
-  margin: 0;
-  vertical-align: middle;
-  height: 80%;
-  float:center;
 }
 
-.iconh2 {
-  padding-top: 45px;
-}
-
-.imgIcon {
-  background: rgb(182, 227, 255);
-  height: 50%;
+.desc {
+  padding-top: 15%;
+  grid-area: 3 / 2 / 6 / 3;
+  /* border: solid 2px black; */
+  text-align: center;
 }
