@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "vysyt-34636"
-  }
+    "default": "vysyt-firebase-test-2",
+    "demo": "vysyt-34636"
+  },
+  "targets": {},
+  "etags": {}
 }

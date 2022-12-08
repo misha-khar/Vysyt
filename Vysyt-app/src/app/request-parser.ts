@@ -135,7 +135,7 @@ export class RequestParser {
     var r = {
       location: new google.maps.LatLng(GlobalVars.globalLat, GlobalVars.globalLon),
       type: type,
-      radius: 5000,
+      radius: 7500,
       minPriceLevel: GlobalVars.globalMinVal,
       maxPriceLevel: GlobalVars.globalMaxVal,
 
