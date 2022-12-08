@@ -60,7 +60,7 @@ export class RequestParser {
     }
 
     private _createMarker(place: google.maps.places.PlaceResult) {
-      console.log(place.name);
+      // console.log(place.name);
       if (!place.geometry || !place.geometry.location) return;
 
       const marker = new google.maps.Marker({
@@ -89,7 +89,7 @@ export class RequestParser {
             GlobalVars.globalLon = results[0].geometry!.location!.lng();
             GlobalVars.globalPlace = results[0].name!;
             console.log("Valid Request");
-            
+
           } else {
             console.log("Invalid Request")
           }
@@ -114,7 +114,7 @@ export class RequestParser {
           results: google.maps.places.PlaceResult[] | null,
           status: google.maps.places.PlacesServiceStatus
         ) => {
-          console.log(status);          
+          // console.log(status);
           if (status === google.maps.places.PlacesServiceStatus.OK && results) {
             let i: number;
             if (results.length > numPlaces) {
@@ -124,7 +124,10 @@ export class RequestParser {
             }
             for (; i>=0; i--) {
               this._createMarker(results[i]);
+
             }
+            // make markers here
+
           }
         }
       )// end nearbySearch
