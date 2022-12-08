@@ -1,13 +1,17 @@
 .wrapper {
-  /* border: solid red 5px; */
   width: 50vw;
   margin: auto;
   position: relative;
   text-align: center;
-  /* height: 25vh;
-  width: 50vw; */
-  padding-bottom: 5%;
-  /* background-color: antiquewhite; */
+  padding: 1%;
+
+}
+
+@media (max-width: 1000px) {
+  .wrapper{
+    font-size: 2vh;
+    padding-left: 30%;
+  }
 }
 
 .form-div {
@@ -33,17 +37,19 @@ input[type=radio] {
 
 .slider-div {
   margin: auto;
-  width: 85%;
+  /* width: 85%; */
   /* border: 5px solid orange; */
 }
 
 .submit-div {
   margin: auto;
+  min-width: 40vw;
+  max-width: 95vw;
   /* border: 5px solid yellow; */
 }
 
 input[type=submit] {
-  background-color: green;
+  background-color: #519c30;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -55,7 +61,9 @@ input[type=submit] {
   cursor: pointer;
 }
 input[type=submit]:hover{
-  background-color: darkgreen;
+  background-color: #146614;
   padding: 15px 31px;
 }
+
+
 

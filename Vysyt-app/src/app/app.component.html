@@ -1,18 +1,17 @@
+<html>
 <div class="app">
-  <div class="wrapper">
-
+  <div class="outer-flex">
     <!-- <h1>{{title}}</h1> -->
     <app-header class="header"></app-header>
     <app-user-input class="input"></app-user-input>
     <!-- <app-output-test></app-output-test> -->
-    <div class="results-container">
+    <div class="results-grid">
       <app-weather class="weather"></app-weather>
       <app-map-display class="map"></app-map-display>
     </div>
-    <app-footer></app-footer>
-    <!-- <app-refresh-results-button></app-refresh-results-button> -->
+    <app-footer class="footer"></app-footer>
   </div>
 </div>
-
+</html>
 
 <router-outlet></router-outlet>
