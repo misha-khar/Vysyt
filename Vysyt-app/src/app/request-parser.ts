@@ -82,7 +82,7 @@ export class RequestParser {
         var priceLvl = place['price_level']!;
         var priceStr = this.getMoneySigns(priceLvl);
         html = "<b>" + place.name + "</b> <br/>" + place['vicinity']!
-          + "<br/>" + priceStr + ' ' + place['rating'] + '⭐';
+        + "<br/>" + place['international_phone_number'] + "<br/>" + priceStr + ' ' + place['rating'] + '⭐';
       } else {
         html = "<b>" + place.name + "</b>";
       }
