@@ -17,7 +17,7 @@ export class RequestParser {
 
     this._map = new google.maps.Map(document.getElementById("map") as HTMLElement, {
       center: pittsburgh,
-      zoom: 12,
+      zoom: 13,
     });
 
     this._service = new google.maps.places.PlacesService(this._map);
@@ -52,9 +52,12 @@ export class RequestParser {
     if (this.getQuery() === "") { return false; }
     this._query(this.getQuery());
     await this.delay(2000);
-    this._queryNearby('restaurant', 5);
-    this._queryNearby('lodging');
+    this._queryNearby('lodging', 5);
+    this._queryNearby('restaurant', 3);
+    this._queryNearby('cafe');
+    this._queryNearby('art_gallery');
     this._queryNearby('museum');
+    this._queryNearby('tourist_attraction');
     this._queryNearby('park');
     this._queryNearby('aquarium', 1);
     this._queryNearby('night_club');
@@ -132,7 +135,7 @@ export class RequestParser {
     var r = {
       location: new google.maps.LatLng(GlobalVars.globalLat, GlobalVars.globalLon),
       type: type,
-      radius: 500,
+      radius: 5000,
       minPriceLevel: GlobalVars.globalMinVal,
       maxPriceLevel: GlobalVars.globalMaxVal,
 
