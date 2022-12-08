@@ -60,7 +60,6 @@ export class RequestParser {
     }
 
     private _createMarker(place: google.maps.places.PlaceResult) {
-      console.log(place.name);
       if (!place.geometry || !place.geometry.location) return;
 
       const marker = new google.maps.Marker({
