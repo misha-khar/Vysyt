@@ -75,14 +75,14 @@ export class RequestParser {
     // const infoWindow = new google.maps.InfoWindow({
     //   content: "this is " + place,
     // });
-    console.log(place.name + place['vicinity']!);
+    console.log(place);
     google.maps.event.addListener(marker, 'click', () => {
       var html;
       if (place['vicinity'] != undefined) {
         var priceLvl = place['price_level']!;
         var priceStr = this.getMoneySigns(priceLvl);
         html = "<b>" + place.name + "</b> <br/>" + place['vicinity']!
-        + "<br/>" + place['international_phone_number'] + "<br/>" + priceStr + ' ' + place['rating'] + '⭐';
+          + "<br/>" + priceStr + ' ' + place['rating'] + '⭐';
       } else {
         html = "<b>" + place.name + "</b>";
       }
@@ -96,10 +96,10 @@ export class RequestParser {
 
   private getMoneySigns(num: number) {
     var retStr = '';
-    for (let i = 0; i < num; i++){
-      retStr+= '💲'
+    for (let i = 0; i < num; i++) {
+      retStr += '💲'
     }
-      return retStr;
+    return retStr;
   }
 
   private _query(query: string) {
@@ -134,7 +134,8 @@ export class RequestParser {
       type: type,
       radius: 500,
       minPriceLevel: GlobalVars.globalMinVal,
-      maxPriceLevel: GlobalVars.globalMaxVal
+      maxPriceLevel: GlobalVars.globalMaxVal,
+
     }
     this._service.nearbySearch(
       r,
