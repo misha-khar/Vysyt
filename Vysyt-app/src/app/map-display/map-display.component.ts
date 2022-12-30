@@ -11,9 +11,9 @@ import { Subscription } from 'rxjs';
 })
 export class MapDisplayComponent implements OnInit {
 
-  testComment = "pre-click";
-  clickCount = 0;
-  city: string;
+  // testComment = "pre-click";
+  // clickCount = 0;
+  // city: string;
 
   clickEventsubscription: Subscription;
 
